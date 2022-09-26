@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from "react";
-import {Text,View, StyleSheet,Button,Alert, TouchableOpacity} from 'react-native'
+import {Text,View, StyleSheet,Button,Alert, TouchableOpacity, ScrollView} from 'react-native'
 import Homer from "./src/inicio/inicio";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import propiedadeApoio from './src/apoio/props';
 import Textos from './src/apoio/apoio';
+import Informacoes from './src/informacoes/informacao';
 
 
 
@@ -19,15 +20,34 @@ const entrar=()=>{
 }
 
 
+
+
     return(
+
+        <ScrollView>
+
+
         <View style={styles.Body}>
             <Homer/>
             <StatusBar barStyle='dark-content'  backgroundColor='#fff'/>
 
+        <Informacoes/>
+
         <TouchableOpacity style={styles.btnAcessar} onPress={()=>entrar()}>
           <Text style={styles.textAcessar}> > </Text>
         </TouchableOpacity>
+
+
         </View>
+        </ScrollView>
+
+
+
+
+
+
+
+
     )
 }
 

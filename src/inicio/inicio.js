@@ -5,7 +5,7 @@ export default function Homer(){
     return (
         <View style={styles.container}>
           <Text style={styles.paragraph}>Setembro </Text>
-          <Text style={styles.amarelo}>amarel   o </Text>
+          <Text style={styles.amarelo}>Amarel   o </Text>
          <Image style={styles.logo} source={require('../../assets/lacoAmarelo.jpeg')}/>
          
         
@@ -33,7 +33,8 @@ export default function Homer(){
         alignItems: 'center',
         justifyContent: 'center',
         padding: 24,
-        backgroundColor:'#fff'
+        backgroundColor:'#fff',
+        flex:2
        
       },
       

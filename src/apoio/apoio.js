@@ -8,11 +8,9 @@ import Informacoes from '../informacoes/informacao';
 const imagem1='../../assets/papelParede.jpg'
 
 
-export default function Textos(props,{navigation}) {
+export default function Textos(props) {
 
-  const botao=()=>{
-   navigation.navigate.this.props("Informacoes")
- }
+
   return (
         <View >
           <ScrollView>
